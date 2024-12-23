@@ -7,6 +7,7 @@ function getSuplierRoutes() {
   router.use(express.json());
 
   router.post("/", suplierController.addNewSupplier);
+  router.get("/", suplierController.getAllSuppliers);
 
 
   return router;
